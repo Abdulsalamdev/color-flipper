@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #f1f5f8;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding-block: 20px;
+  padding-inline: clamp(20px, 3vw, 50px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.flipH {
+  color: hsl(205, 78%, 60%);
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.flipB {
+  display: flex;
+  gap: clamp(20px, 3vw, 40px);
+  color: hsl(209, 61%, 16%);
+  font-weight: 500;
+}
+.flipB-1 {
+  color: hsl(209, 61%, 16%);
+}
+.flipB-1:hover {
+  color: hsl(205, 78%, 60%);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 74px);
+}
+
+.black {
+  background-color: hsl(209, 61%, 16%);
+  color: white;
+  font-size: clamp(30px, 3vw, 50px);
+  padding: 1rem;
+  font-weight: 700;
+}
+
+.value {
+  color: hsl(205, 78%, 60%);
+}
+
+.btn {
+  border: 2px solid #222;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  font-size: 1rem;
+  padding: 0.75rem 1.25rem;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 0.25rem;
+}
+
+.btn:hover {
+  transition: all 0.3s linear;
+  background-color: black;
+  color: white;
+}
+
+@media (max-width: 430px) {
+  .black {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
